@@ -1,0 +1,9 @@
+{
+  "name": "history-class",
+  "private": true,
+  "version": "0.0.0",
+  "dependencies": {
+    "axios": "^0.14.0"
+  },
+  "devDependencies": {}
+}
