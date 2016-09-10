@@ -4,8 +4,8 @@
   "manifest_version": 2,
   "description": "__MSG_appDescription__",
   "icons": {
-    "16": "images/icon-16.png",
-    "128": "images/icon-128.png"
+    "16": "images/square.png",
+    "128": "images/square.png"
   },
   "default_locale": "en",
   "background": {
@@ -44,8 +44,8 @@
   },
   "browser_action": {
     "default_icon": {
-      "19": "images/icon-19.png",
-      "38": "images/icon-38.png"
+      "19": "images/square.png",
+      "38": "images/square.png"
     },
     "default_title": "history class",
     "default_popup": "popup.html"
