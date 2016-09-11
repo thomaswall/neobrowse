@@ -18,12 +18,13 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
         if (tabId == tab.id) {
             previousUrl = tabIdToPreviousUrl[tabId];
         }
-
-        axios.post('http://54.213.194.217:3000/site_visit', {previous: previousUrl, current: currentUrl})
-          .then(function (res) {
-            return console.log(res);
-          })
-          .catch(err => console.log);
+        if(!previousUrl || previousUrl.url != currentUrl.url) {
+          axios.post('http://54.213.194.217:3000/site_visit', {previous: previousUrl, current: currentUrl})
+            .then(function (res) {
+              return console.log(res);
+            })
+            .catch(err => console.log);
+          }
 
         tabIdToPreviousUrl[tabId] = currentUrl;
 
